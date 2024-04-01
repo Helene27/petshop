@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.TertiaryController">
+    <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(tertiary view)" />
+        <Label text="Pick three accesories for your pet:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox mnemonicParsing="false" text="Pet bed" />
+            <CheckBox mnemonicParsing="false" text="Leash" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Fur brush" GridPane.rowIndex="2" />
+            <CheckBox mnemonicParsing="false" text="Cardboard box" GridPane.columnIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Bell" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Mouse toy" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <CheckBox mnemonicParsing="false" text="Carrots" GridPane.columnIndex="2" />
+            <CheckBox mnemonicParsing="false" text="Collar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Climbing tower" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <CheckBox mnemonicParsing="false" text="Seeds" GridPane.columnIndex="3" />
+            <CheckBox mnemonicParsing="false" text="Cage" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Teddy bear" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+        <Button fx:id="tertiaryButton" onAction="#switchToQuarternary" text="Switch to Quarternary View" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
