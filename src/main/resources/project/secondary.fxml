@@ -18,8 +18,8 @@
          </font></Label>
       <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0">
          <children>
-            <TextField promptText="Enter name here" />
-            <Button mnemonicParsing="false" text="Enter" />
+            <TextField fx:id="nameField" promptText="Enter name here" />
+            <Button fx:id="enterButton" mnemonicParsing="false" text="Enter" />
          </children>
       </HBox>
         <Button fx:id="secondaryButton" onAction="#switchToTertiary" text="Switch to Tertiary View" />
