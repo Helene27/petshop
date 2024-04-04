@@ -22,7 +22,7 @@ public class FileOperations {
     public void writeInputToFile(String filename) {
         try {
             PrintWriter writer = new PrintWriter(filename);
-            writer.println("Chosen bajs animal: " + inputField);
+            writer.println("Chosen animal: " + inputField);
             writer.flush();
             writer.close();
         } catch (FileNotFoundException e) {
@@ -32,6 +32,6 @@ public class FileOperations {
 
     public static void main(String[] args) {
         FileOperations dog = new FileOperations("dog");
-        dog.writeInputToFile("../../resources/project/Animals.txt");
+        dog.writeInputToFile("src/main/resources/project/Animals.txt");
     }
 }

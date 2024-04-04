@@ -1,1 +1,1 @@
-Choosen animal: dog
+Chosen animal: dog
