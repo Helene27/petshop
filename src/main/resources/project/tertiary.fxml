@@ -29,18 +29,18 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <CheckBox mnemonicParsing="false" text="Pet bed" />
-            <CheckBox mnemonicParsing="false" text="Leash" GridPane.rowIndex="1" />
-            <CheckBox mnemonicParsing="false" text="Fur brush" GridPane.rowIndex="2" />
-            <CheckBox mnemonicParsing="false" text="Cardboard box" GridPane.columnIndex="1" />
-            <CheckBox mnemonicParsing="false" text="Bell" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <CheckBox mnemonicParsing="false" text="Mouse toy" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <CheckBox mnemonicParsing="false" text="Carrots" GridPane.columnIndex="2" />
-            <CheckBox mnemonicParsing="false" text="Collar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <CheckBox mnemonicParsing="false" text="Climbing tower" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <CheckBox mnemonicParsing="false" text="Seeds" GridPane.columnIndex="3" />
-            <CheckBox mnemonicParsing="false" text="Cage" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <CheckBox mnemonicParsing="false" text="Teddy bear" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <CheckBox fx:id="checkBox1" mnemonicParsing="false" text="Pet bed" />
+            <CheckBox fx:id="checkBox2" mnemonicParsing="false" text="Leash" GridPane.rowIndex="1" />
+            <CheckBox fx:id="checkBox3" mnemonicParsing="false" text="Fur brush" GridPane.rowIndex="2" />
+            <CheckBox fx:id="checkBox4" mnemonicParsing="false" text="Cardboard box" GridPane.columnIndex="1" />
+            <CheckBox fx:id="checkBox5" mnemonicParsing="false" text="Bell" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <CheckBox fx:id="checkBox6" mnemonicParsing="false" text="Mouse toy" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <CheckBox fx:id="checkBox7" mnemonicParsing="false" text="Carrots" GridPane.columnIndex="2" />
+            <CheckBox fx:id="checkBox8" mnemonicParsing="false" text="Collar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <CheckBox fx:id="checkBox9" mnemonicParsing="false" text="Climbing tower" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <CheckBox fx:id="checkBox10" mnemonicParsing="false" text="Seeds" GridPane.columnIndex="3" />
+            <CheckBox fx:id="checkBox11" mnemonicParsing="false" text="Cage" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <CheckBox fx:id="checkBox12" mnemonicParsing="false" text="Teddy bear" GridPane.columnIndex="3" GridPane.rowIndex="2" />
          </children>
       </GridPane>
         <Button fx:id="doneButton" onAction="#switchToQuarternary" text="Done" />
