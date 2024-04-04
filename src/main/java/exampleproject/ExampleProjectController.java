@@ -21,10 +21,8 @@ public class ExampleProjectController {
     private void handleButtonClick() {
         initCalculator(operator.getText());
         try {
-            int result = calculator.calculate(Integer.parseInt(firstNumber.getText()),
-                    Integer.parseInt(secondNumber.getText()));
-            this.result.setText(firstNumber.getText() + " " + operator.getText() + " " + secondNumber.getText() + " = "
-                    + String.valueOf(result));
+            int result = calculator.calculate(Integer.parseInt(firstNumber.getText()),Integer.parseInt(secondNumber.getText()));
+            this.result.setText(firstNumber.getText() + " " + operator.getText() + " " + secondNumber.getText() + " = " + String.valueOf(result));
         } catch (NumberFormatException e) {
             result.setText("Et eller begge tallene er ugyldige");
         }
