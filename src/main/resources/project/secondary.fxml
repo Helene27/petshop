@@ -7,11 +7,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SecondaryController">
     <children>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(secondary view)" />
         <Label text="Great choice! Now pick a name for your pet:">
          <font>
             <Font size="18.0" />
@@ -19,10 +17,9 @@
       <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0">
          <children>
             <TextField fx:id="nameField" promptText="Enter name here" />
-            <Button fx:id="enterButton" mnemonicParsing="false" text="Enter" />
+            <Button fx:id="enterButton" mnemonicParsing="false" onAction="#switchToTertiary" text="Enter" />
          </children>
       </HBox>
-        <Button fx:id="secondaryButton" onAction="#switchToTertiary" text="Switch to Tertiary View" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

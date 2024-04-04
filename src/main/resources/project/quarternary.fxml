@@ -9,13 +9,12 @@
 
 <VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.QuarternaryController">
     <children>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(quarternary view)" />
-        <Label text="Thank you for adopting. Here is your adoption certificate">
+        <Label text="Thank you for adopting. Here is your adoption certificate:">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(print out information here)" />
-        <Button fx:id="quarternaryButton" onAction="#switchToPrimary" text="Switch to Primary View" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(animal)(name)(items)" />
+        <Button fx:id="newAdoptionButton" onAction="#switchToPrimary" text="Adopt a new animal" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
