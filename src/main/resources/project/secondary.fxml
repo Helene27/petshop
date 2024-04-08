@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SecondaryController">
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SecondaryController">
     <children>
         <Label text="Great choice! Now pick a name for your pet:">
          <font>
