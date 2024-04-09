@@ -27,7 +27,7 @@ public class SecondaryController {
         } else {
             System.out.println(name);
             operation = new FileOperations(name);
-            operation.writeToFile("src/main/resources/project/Animals.txt");
+            operation.writeNameToFile();
             App.setRoot("tertiary");
         }
     }

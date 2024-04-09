@@ -18,29 +18,34 @@ public class PrimaryController {
 
     String animal;
 
+    FileOperations operation;
+
 
     @FXML
-    private void switchToSecondary(ActionEvent event) throws IOException {
-
+    private void saveAnimal(ActionEvent event) throws IOException {
         Button sourceButton = (Button) event.getSource();
-
+    
         if(sourceButton.equals(dogButton)){
             animal = "dog";
         }
-
         else if(sourceButton.equals(catButton)){
             animal = "cat";
         }
-
         else if(sourceButton.equals(bunnyButton)){
             animal = "bunny";
         }
-
         else if(sourceButton.equals(birdButton)){
             animal = "bird";
         }
-
+        operation = new FileOperations(animal);
+        operation.writeAnimalToFile();
         System.out.println(animal);
+
+    }
+
+    @FXML
+    private void switchToSecondary(ActionEvent event) throws IOException {
+        saveAnimal(event);
         App.setRoot("secondary");
     }
 }

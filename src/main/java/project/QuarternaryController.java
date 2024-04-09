@@ -7,21 +7,26 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 public class QuarternaryController {
 
     FileOperations operation;
 
     @FXML
-    Label certificateText;
+    ImageView certificateImage;
+    @FXML
+    Label certificateAnimal;
+    @FXML
+    Label certificateName;
 
     String text;
 
     @FXML
     public void initialize() throws FileNotFoundException{
-        operation = new FileOperations("lol");
+        operation = new FileOperations("none");
         text = operation.readFromFile();
-        certificateText.setText(text);
+        certificateName.setText(text);
 
     }
     
