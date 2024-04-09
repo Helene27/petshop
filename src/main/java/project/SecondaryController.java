@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class SecondaryController {
+    FileOperations operation;
+
     @FXML
     TextField nameField;
 
@@ -24,6 +26,8 @@ public class SecondaryController {
             this.outputLabel.setText("Give your pet a name!");
         } else {
             System.out.println(name);
+            operation = new FileOperations(name);
+            operation.writeToFile("src/main/resources/project/Animals.txt");
             App.setRoot("tertiary");
         }
     }

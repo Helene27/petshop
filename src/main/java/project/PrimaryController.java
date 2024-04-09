@@ -16,7 +16,7 @@ public class PrimaryController {
     @FXML
     Button birdButton;
 
-    String animal;
+    static String animal;
 
 
     @FXML
