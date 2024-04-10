@@ -6,4 +6,6 @@ public interface Animal {
 
     String makeSound();
 
+    int calculateAge(int humanAge);
+
 }
