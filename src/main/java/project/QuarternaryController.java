@@ -34,14 +34,10 @@ public class QuarternaryController {
 
         File file = new File("src/main/resources/images/" + animalOut.strip() + ".png");
         Image image = new Image(file.toURI().toString());
-        // Image image = new Image("src/main/resources/images/" + animalOut.strip() + ".png");
         certificateImage.setImage(image);
-        
 
         certificateAnimal.setText("Animal: " + animalOut);
         certificateName.setText("Name: " + nameOut);
-        //få denne til å sette animalOut, nameOut til readfromfile resultater, så sett certificateAnimal til animalOut
-
     }
     
     @FXML

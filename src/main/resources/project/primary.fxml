@@ -10,12 +10,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.PrimaryController">
+
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.PrimaryController">
    <children>
       <Label text="Welcome to our Pet Shop!">
          <font>
             <Font size="24.0" />
-         </font></Label>
+         </font>
+      </Label>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the pet you wish to adopt">
          <font>
             <Font size="18.0" />

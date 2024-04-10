@@ -28,8 +28,3 @@ public class Dog implements Animal {
     }
 
 }
-
-//hund: 7 år per år
-//4-5 papagøyeår per år
-//katt: første år = 15, andre år = 9, så 4 per år
-//kanin: første år = 21 år, så 6 år per år
