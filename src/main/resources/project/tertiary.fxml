@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.TertiaryController">
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.TertiaryController">
     <children>
         <Label text="Pick three accesories for your pet:">
          <font>
-            <Font size="18.0" />
+            <Font name="Comic Sans MS" size="18.0" />
          </font></Label>
       <GridPane>
         <columnConstraints>

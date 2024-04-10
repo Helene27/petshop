@@ -8,60 +8,71 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.PrimaryController">
    <children>
       <Label text="Welcome to our Pet Shop!">
          <font>
-            <Font size="24.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Label>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the pet you wish to adopt">
+      <Label text="Please choose the pet you wish to adopt">
          <font>
             <Font size="18.0" />
          </font>
-      </Text>
+      </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/dog.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="dogButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Dog" />
+                  <Button fx:id="dogButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Dog">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/cat.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="catButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Cat" />
+                  <Button fx:id="catButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Cat">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/bunny.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="bunnyButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Bunny" />
+                  <Button fx:id="bunnyButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Bunny">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/bird.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="birdButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Bird" />
+                  <Button fx:id="birdButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Bird">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
                </children>
             </VBox>
          </children>

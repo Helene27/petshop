@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.QuarternaryController">
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.QuarternaryController">
     <children>
         <Label text="Thank you for adopting. Here is your adoption certificate:">
          <font>
