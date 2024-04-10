@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.PrimaryController">
    <children>
       <Label text="Welcome to our Pet Shop!">
@@ -25,7 +24,7 @@
       </Text>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -35,7 +34,7 @@
                   <Button fx:id="dogButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Dog" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -45,7 +44,7 @@
                   <Button fx:id="catButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Cat" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -55,7 +54,7 @@
                   <Button fx:id="bunnyButton" mnemonicParsing="false" onAction="#switchToSecondary" text="Bunny" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;">
                <children>
                   <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                      <image>
