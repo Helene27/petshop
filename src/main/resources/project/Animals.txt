@@ -35,3 +35,7 @@ love
 none
 none
 none
+dog
+lilo
+dog
+pål
