@@ -44,6 +44,11 @@ public class QuarternaryController {
     public void closeApplication(ActionEvent event) throws IOException {
         Platform.exit();
     }
+
+    @FXML
+    private void switchToQuinary() throws IOException {
+        App.setRoot("quinary");
+    }
     
     @FXML
     private void switchToPrimary() throws IOException {

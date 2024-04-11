@@ -20,6 +20,7 @@
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
          <children>
               <Button fx:id="newAdoptionButton" onAction="#switchToPrimary" text="Adopt a new animal" />
+            <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#switchToQuinary" text="Calculate your animal's age" />
             <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeApplication" text="Close application" />
          </children>
       </HBox>
