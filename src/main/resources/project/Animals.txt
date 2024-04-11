@@ -1,2 +1,13 @@
 bird
 holly
+Test denne filen
+dog
+pippi
+bird
+holly
+cat
+Mjau
+dog
+Tore Tang
+cat
+lol

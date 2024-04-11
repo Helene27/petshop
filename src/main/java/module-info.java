@@ -4,5 +4,4 @@ open module TDT4100_project {
     requires javafx.fxml;
     requires javafx.graphics;
     requires jdk.incubator.vector;
-    requires org.junit.jupiter.api;
 }

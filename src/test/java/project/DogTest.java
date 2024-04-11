@@ -29,7 +29,7 @@ public class DogTest {
     //tester om metoden thrower exception om human age er < 0
     @Test
     public void testCalculateAgeWithNegativeAge(){
-        assertThrows(IllegalAccessException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             dog.calculateAge(-20);
         });
     }
