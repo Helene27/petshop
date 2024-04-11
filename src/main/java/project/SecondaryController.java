@@ -18,10 +18,12 @@ public class SecondaryController {
     @FXML
     Button enterButton;
 
+    String name;
+    
     @FXML
     private void switchToTertiary() throws IOException {
-        String name = nameField.getText();
-
+        name = nameField.getText();
+        
         if (name.isEmpty()) {
             this.outputLabel.setText("Give your pet a name!");
         } else {
