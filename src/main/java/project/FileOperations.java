@@ -57,13 +57,6 @@ public class FileOperations {
         textOut[1] = last;
         return textOut;
 
-        // String[] textOut = new String[2];
-        // String animalOut = scanner.nextLine();
-        // String nameOut = scanner.nextLine();
-        // scanner.close();
-        // textOut[0] = animalOut;
-        // textOut[1] = nameOut;
-        // return textOut;
     }
 
 }

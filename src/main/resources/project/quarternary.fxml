@@ -10,10 +10,15 @@
 
 <VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.QuarternaryController">
     <children>
-        <Label text="Thank you for adopting. Here is your adoption certificate:">
+        <Label alignment="CENTER" prefWidth="600.0" text="Thank you for adopting!">
          <font>
-            <Font size="24.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font></Label>
+      <Label text="Here is your adoption certificate:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
       <ImageView fx:id="certificateImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
       <Label fx:id="certificateAnimal" text="(animal)" />
       <Label fx:id="certificateName" text="(name)" />
