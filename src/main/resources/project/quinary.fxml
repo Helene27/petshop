@@ -9,15 +9,20 @@
 
 <VBox fx:id="vbox" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.QuinaryController">
    <children>
-      <Label text="Enter human years to calculate how old your pet will be in pet years">
+      <Label fx:id="firstText" text="Your pet ages faster than you, as their life is shorter.">
          <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondText" text="Enter your  age, to see how old you would be in pet years!">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <TextField promptText="Enter years here" />
-            <Button mnemonicParsing="false" text="Enter" />
+            <TextField fx:id="inputField" promptText="Enter years here" />
+            <Button fx:id="enterButton" mnemonicParsing="false" onAction="#calculateAge" text="Enter" />
          </children>
       </HBox>
       <Label fx:id="yearsField" />
