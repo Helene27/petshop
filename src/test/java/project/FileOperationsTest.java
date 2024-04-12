@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import org.junit.jupiter.api.Test;
@@ -24,12 +23,10 @@ public class FileOperationsTest {
                 last = scanner.nextLine();
                 expectedLastLine = last;
             }
-            System.out.println(expectedLastLine);
         }
         
         FileOperations fileOperations = new FileOperations("");
         String[] actual = fileOperations.readFromFile();
-        System.out.println(Arrays.toString(actual));
 
         assertEquals(expectedLastLine, actual[1]);
 
@@ -42,7 +39,6 @@ public class FileOperationsTest {
         
         String[] actual = fileOperations.readFromFile();
         String expected = "Jeg tester at dyr blir skrevet";
-        System.out.println(Arrays.toString(actual));
 
         assertEquals(expected, actual[1]);
 

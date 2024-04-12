@@ -2,6 +2,7 @@ package project;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -26,7 +27,8 @@ public class QuinaryController {
     String animal;
     String name;
 
-    int humanAge;
+    String humanAge;
+    int intHumanAge;
     String finalResult;
     int result;
 
@@ -45,27 +47,34 @@ public class QuinaryController {
 
     @FXML
     private void calculateAge() throws IOException {
-        humanAge = Integer.parseInt(inputField.getText());
+        humanAge = inputField.getText();
+
+        if (Pattern.matches("[0-9]+", humanAge) == false) {
+            yearsField.setText("Enter a valid number!");
+            return;
+        }
+        intHumanAge = Integer.parseInt(humanAge); 
+        
         if (animal.equals("dog")) {
             Dog dog = new Dog();
-            result = dog.calculateAge(humanAge);
+            result = dog.calculateAge(intHumanAge);
         }
         else if (animal.equals("cat")) {
             Cat cat = new Cat();
-            result = cat.calculateAge(humanAge);
+            result = cat.calculateAge(intHumanAge);
         }
         else if (animal.equals("bunny")) {
             Bunny bunny = new Bunny();
-            result = bunny.calculateAge(humanAge);
+            result = bunny.calculateAge(intHumanAge);
         }
         else if (animal.equals("bird")) {
             Bird bird = new Bird();
-            result = bird.calculateAge(humanAge);
+            result = bird.calculateAge(intHumanAge);
         }
 
         finalResult = Integer.toString(result);
-        System.out.println(finalResult);
         yearsField.setText("You would be " + finalResult + " in " + animal + " years!");
+        return;
     }
 
 
