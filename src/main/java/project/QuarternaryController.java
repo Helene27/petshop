@@ -22,7 +22,11 @@ public class QuarternaryController {
     @FXML
     Label certificateName;
 
+    @FXML
+    Label soundField;
+
     String[] textArray;
+    String sound;
 
     @FXML
     public void initialize() throws FileNotFoundException{
@@ -38,6 +42,24 @@ public class QuarternaryController {
 
         certificateAnimal.setText("Animal: " + animalOut);
         certificateName.setText("Name: " + nameOut);
+
+        if (animalOut.equals("dog")) {
+            Dog dog = new Dog();
+            sound = dog.makeSound(nameOut);
+        }
+        else if (animalOut.equals("cat")) {
+            Cat cat = new Cat();
+            sound = cat.makeSound(nameOut);
+        }
+        else if (animalOut.equals("bunny")) {
+            Bunny bunny = new Bunny();
+            sound = bunny.makeSound(nameOut);
+        }
+        else if (animalOut.equals("bird")) {
+            Bird bird = new Bird();
+            sound = bird.makeSound(nameOut);
+        }
+        soundField.setText(sound);
     }
     
     @FXML

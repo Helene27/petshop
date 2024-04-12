@@ -24,8 +24,8 @@ public class QuinaryController {
     @FXML
     TextField inputField;
 
-    @FXML
-    Label soundField;
+    // @FXML
+    // Label soundField;
 
     String animal;
     String name;
@@ -35,7 +35,7 @@ public class QuinaryController {
     String finalResult;
     int result;
 
-    String sound;
+    // String sound;
 
     @FXML
     public void initialize() throws FileNotFoundException{
@@ -48,23 +48,23 @@ public class QuinaryController {
         firstText.setText(name + " ages faster than you, as their life is shorter.");
         secondText.setText("Enter your age, to see how old you would be in " + animal + " years!");
 
-        if (animal.equals("dog")) {
-            Dog dog = new Dog();
-            sound = dog.makeSound(name);
-        }
-        else if (animal.equals("cat")) {
-            Cat cat = new Cat();
-            sound = cat.makeSound(name);
-        }
-        else if (animal.equals("bunny")) {
-            Bunny bunny = new Bunny();
-            sound = bunny.makeSound(name);
-        }
-        else if (animal.equals("bird")) {
-            Bird bird = new Bird();
-            sound = bird.makeSound(name);
-        }
-        soundField.setText(sound);
+        // if (animal.equals("dog")) {
+        //     Dog dog = new Dog();
+        //     sound = dog.makeSound(name);
+        // }
+        // else if (animal.equals("cat")) {
+        //     Cat cat = new Cat();
+        //     sound = cat.makeSound(name);
+        // }
+        // else if (animal.equals("bunny")) {
+        //     Bunny bunny = new Bunny();
+        //     sound = bunny.makeSound(name);
+        // }
+        // else if (animal.equals("bird")) {
+        //     Bird bird = new Bird();
+        //     sound = bird.makeSound(name);
+        // }
+        // soundField.setText(sound);
 
     }
 

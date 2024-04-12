@@ -26,7 +26,6 @@
          </children>
       </HBox>
       <Label fx:id="yearsField" />
-      <Label fx:id="soundField" />
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
             <Button fx:id="newAdoptionButton" mnemonicParsing="false" onAction="#switchToPrimary" text="Adopt a new animal" />
