@@ -4,7 +4,7 @@ public interface Animal {
 
     String getName();
 
-    String makeSound();
+    String makeSound(String name);
 
     int calculateAge(int humanAge);
 

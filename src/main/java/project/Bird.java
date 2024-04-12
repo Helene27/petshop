@@ -9,8 +9,8 @@ public class Bird implements Animal {
         return name;
     }
 
-    public String makeSound() {
-        return name + "says pip!";
+    public String makeSound(String name) {
+        return name + " says pip!";
     }
 
     //one calender year equals 9 bird (of type parakeet) years

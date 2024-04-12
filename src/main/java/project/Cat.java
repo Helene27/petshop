@@ -9,8 +9,8 @@ public class Cat implements Animal {
         return name;
     }
 
-    public String makeSound() {
-        return name + "says meow!";
+    public String makeSound(String name) {
+        return name + " says meow!";
     }
 
     //first calender year equals 15 cat years, second year equals 9 cat years, following years equals 4 cat years each

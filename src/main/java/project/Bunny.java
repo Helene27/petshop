@@ -9,8 +9,8 @@ public class Bunny implements Animal {
         return name;
     }
 
-    public String makeSound() {
-        return name + "says tnatna!";
+    public String makeSound(String name) {
+        return name + " says tnatna!";
     }
 
     //first calender year equals 21 bunny years, following years equals 6 bunny years each

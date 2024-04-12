@@ -9,8 +9,8 @@ public class Dog implements Animal {
         return name;
     }
 
-    public String makeSound() {
-        return name + "says woof!";
+    public String makeSound(String name) {
+        return name + " says woof!";
     }
 
     //one calender year equals 7 dog years
