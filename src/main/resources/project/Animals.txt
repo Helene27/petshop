@@ -51,3 +51,5 @@ none
 minnie
 dog
 Jeg tester at dyr blir skrevet
+dog
+åpoiu
