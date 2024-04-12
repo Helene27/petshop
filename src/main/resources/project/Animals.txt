@@ -51,4 +51,9 @@ none
 minnie
 dog
 Jeg tester at dyr blir skrevet
+<<<<<<< HEAD
 Jeg tester at dyr blir skrevet
+=======
+dog
+åpoiu
+>>>>>>> 91893d27fa7ebe9a67a9fbb081fd586c74f4fe0f
