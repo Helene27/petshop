@@ -40,3 +40,14 @@ pål
 Pippip
 bird
 Pippip
+cat
+mollly
+bird
+titti
+none
+none
+none
+none
+minnie
+dog
+Jeg tester at dyr blir skrevet

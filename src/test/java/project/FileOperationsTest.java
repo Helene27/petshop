@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.Scanner;
 
 import org.junit.jupiter.api.Test;
@@ -16,41 +17,12 @@ import org.junit.jupiter.api.io.TempDir;
 
 public class FileOperationsTest {
 
-    private String textIn;
     private String filePath = "src/main/resources/project/Animals.txt";
 
-    @Test
-    public void writeToFileTest() throws IOException {
-        
-        // Scanner scanner = new Scanner(new File(filePath));
-        // String last = null; //name
-        // //String secondLast = null; //animal
-
-        // while (scanner.hasNextLine()) {
-        //     //secondLast = last;
-        //     last = scanner.nextLine();
-        // }
-        // scanner.close();
-
-
-        FileOperations fileOperations = new FileOperations("none");
-        fileOperations.writeNameToFile();
-        Scanner scan = new Scanner(new FileReader(filePath));
-        
-        while (scan.hasNextLine()){
-            String line = scan.nextLine();
-
-        }
-       
-       
-        
-       //assertEquals("Test denne filen", skrive);
-
-    }
-
+    //Test 3. Tester metoden readFromFile
 
     @Test
-    public void readFromFile() throws IOException {
+    public void readFromFileTest() throws IOException {
         String expectedLastLine = null;
         String last = null;
         try (Scanner scanner = new Scanner(new FileReader(filePath))) {
@@ -63,9 +35,22 @@ public class FileOperationsTest {
         
         FileOperations fileOperations = new FileOperations("");
         String[] actual = fileOperations.readFromFile();
-        System.out.println(actual);
+        System.out.println(Arrays.toString(actual));
 
         assertEquals(expectedLastLine, actual[1]);
+
+    }
+
+    @Test
+    public void writeAnimalToFileTest() throws IOException {
+        FileOperations fileOperations = new FileOperations("Jeg tester at dyr blir skrevet");
+        fileOperations.writeAnimalToFile();
+        
+        String[] actual = fileOperations.readFromFile();
+        String expected = "Jeg tester at dyr blir skrevet";
+        System.out.println(Arrays.toString(actual));
+
+        assertEquals(expected, actual[1]);
 
     }
 }
