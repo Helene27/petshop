@@ -6,3 +6,7 @@ bunny
 uwu
 bird
 cody
+dog
+rudolf
+bird
+helene
