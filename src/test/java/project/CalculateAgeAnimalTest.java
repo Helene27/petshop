@@ -9,13 +9,13 @@ import java.io.IOException;
 public class CalculateAgeAnimalTest {
 
     @Test
-    public void testCalculateAgeDog() throws IOException{
+    public void testCalculateAgeBunny() throws IOException{
         int humanAge = 7;
-        Dog dog = new Dog();
+        Bunny bunny = new Bunny();
 
-        int result = dog.calculateAge(humanAge);
+        int result = bunny.calculateAge(humanAge);
 
-        assertEquals(49, result);
+        assertEquals(57, result);
     }
 
     @Test
