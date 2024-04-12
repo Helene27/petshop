@@ -27,7 +27,6 @@ public class SecondaryController {
         if (name.isEmpty()) {
             this.outputLabel.setText("Give your pet a name!");
         } else {
-            System.out.println(name);
             operation = new FileOperations(name);
             operation.writeNameToFile();
             App.setRoot("tertiary");

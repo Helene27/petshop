@@ -24,7 +24,6 @@ public class CalculateAgeAnimalTest {
         Cat cat = new Cat();
 
         int result = cat.calculateAge(humanAge);
-        System.out.println(result);
 
         assertEquals(44, result);
     }

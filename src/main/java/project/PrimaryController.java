@@ -39,7 +39,6 @@ public class PrimaryController {
         }
         operation = new FileOperations(animal);
         operation.writeAnimalToFile();
-        System.out.println(animal);
 
     }
 

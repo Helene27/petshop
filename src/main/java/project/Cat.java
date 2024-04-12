@@ -19,6 +19,9 @@ public class Cat implements Animal {
         if (humanAge < 0) {
             throw new IllegalArgumentException("Age cannot be negative");
         }
+        else if (humanAge == 0) {
+            catAge = 0;
+        }
         else if (humanAge == 1) {
             catAge = 15;
         }
